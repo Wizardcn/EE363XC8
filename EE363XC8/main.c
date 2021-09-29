@@ -1,13 +1,4 @@
-unsigned char ufunc(unsigned char a)
-{
-	unsigned char r = 0;
-	while (a)
-	{
-		r += 8;
-		a--;
-	}
-	return r;
-}
+unsigned char ufunc(unsigned char a);
 
 int main(void)
 {
@@ -19,4 +10,15 @@ int main(void)
 	ufunc(40);
 	ufunc(48);
 	ufunc(56);
+}
+
+unsigned char ufunc(unsigned char a)
+{
+	unsigned char r = 0;
+	while (a)
+	{
+		r += 8;
+		a--;
+	}
+	return r;
 }
