@@ -1,15 +1,15 @@
-unsigned int ga, ub;
+unsigned char ga, ub;
 
-void assign_number(void), assign_char(void), and(void), or(void), use_and_inc(void), use_and_dec(void), shift_right(void), shift_left(void);
-
+void assign_number(void), assign_char(void), and(void), or (void), use_and_inc(void), use_and_dec(void), shift_right(void), shift_left(void);
 
 int main(void)
 {
-	while(1){
+	while (1)
+	{
 		assign_number();
 		assign_char();
 		and();
-		or();
+		or ();
 		use_and_inc();
 		use_and_dec();
 		shift_right();
@@ -17,35 +17,42 @@ int main(void)
 	}
 }
 
-void assign_number(void){
+void assign_number(void)
+{
 	ga = 0x54;
 }
 
-void assign_char(void){
+void assign_char(void)
+{
 	ub = 'K';
 }
 
-void and(void){
+void and (void)
+{
 	ga &= 0xF0;
 }
 
-void or(void){
+void or (void)
+{
 	ga |= 0b00001001;
 }
 
-void use_and_inc(void){
+void use_and_inc(void)
+{
 	ga++;
 }
 
-void use_and_dec(void){
+void use_and_dec(void)
+{
 	ub--;
 }
 
-void shift_right(void){
+void shift_right(void)
+{
 	ga >>= 1;
 }
 
-void shift_left(void){
+void shift_left(void)
+{
 	ub <<= 2;
 }
-
